@@ -33,7 +33,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             //public info read only access token
-            buildConfigField 'String', "API_KEY", "\"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\""
+            buildConfigField 'String', "API_KEY", "\"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\""
             buildConfigField 'String', "BASE_API_URL", "\"https://api.github.com\""
         }
 
@@ -42,7 +42,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
 
             //public info read only access token
-            buildConfigField 'String', "API_KEY", "\"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\""
+            buildConfigField 'String', "API_KEY", "\"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\""
             buildConfigField 'String', "BASE_API_URL", "\"https://api.github.com\""
         }
     }
