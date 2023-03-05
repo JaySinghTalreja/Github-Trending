@@ -4,6 +4,7 @@ import com.jaysinghtalreja.githubdemo.BuildConfig
 import com.jaysinghtalreja.githubdemo.data.sourceofdata.GithubApi
 import com.jaysinghtalreja.githubdemo.network.AuthInterceptor
 import com.jaysinghtalreja.githubdemo.network.NoConnectionInterceptor
+import com.jaysinghtalreja.githubdemo.utils.Constants
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
@@ -41,7 +42,7 @@ class NetModule {
 
         @Singleton
         @Provides
-        fun provideAuthInterceptor(): AuthInterceptor = AuthInterceptor(BuildConfig.API_KEY)
+        fun provideAuthInterceptor(): AuthInterceptor = AuthInterceptor(Constants.API_KEY)
 
         /**
          * Provide OkHttp
